@@ -10,6 +10,11 @@ body {
   font-weight: 400;
   line-height: 18px;
 }
+
+body.notScrollable {
+  overflow-y: hidden;
+}
+
 .container {
   position: relative;
   box-sizing: border-box;
@@ -27,6 +32,11 @@ h2 {
 svg {
   position: absolute;
 }
+
+.hidden {
+  display: none;
+}
+
 header,
 footer {
   width: 100%;
@@ -1963,4 +1973,207 @@ footer .design-info {
   .look-animals .slider-button.left {
     display: none;
   }
+}
+
+.cover {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+}
+.form-feedback {
+  width: 578px;
+  /* height: 640px; */
+  align-items: center;
+  /* justify-content: center; */
+  position: fixed;
+  z-index: 100;
+  top: 100px;
+  left: calc(50vw - 284px);
+  background-color: white;
+  border-radius: 12px;
+  flex-direction: column;
+}
+.modal-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2A8086;
+  /* padding: 32px 0; */
+  height: 125px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+.modal-header img{
+  width: 78px;
+  height: 61px;
+}
+.modal-body{
+  width: calc(100% - 120px);
+  margin: 32px 60px 46px;
+}
+.tab {
+  overflow: hidden;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0 0 20px;
+  transition: 0.3s;
+  width: 50%;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+text-transform: uppercase;
+border-bottom: 2px solid  #C5E1E6;
+color: #0D444D;
+}
+.tab button.active {
+
+  border-bottom-color: #2A8086; 
+}
+.authorize{
+  width: 216px;
+  height: 56px;
+  background-color: transparent;
+  border: none;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display:flex;
+align-items: center;
+align-content: center;
+justify-content: center;
+color: #2D2D2D;
+cursor: pointer;
+transition: box-shadow 0.5s ease-in-out;
+box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+border-radius: 10px;
+}
+.authorize:hover{
+  box-shadow: 0px 0px 3px 3px rgba(39, 39, 39, 0.25);
+}
+.authorize img{
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+.authorize .i-google{
+  width: 20px;
+  height: 20px;
+}
+.btns{
+  display: flex;
+  margin: 32px 0;
+}
+.modal-body label, .modal-body input,.modal-body textarea{
+  width: 100%;
+}
+.modal-body input{
+  height: 54px;
+  box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  margin: 8px 0 20px;
+  border: none;
+  font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #0D444D;
+}
+.modal-body label{
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.btn-submit{
+  width: 100%;
+  background: #2A8088;
+  color: #C5E1E6;
+  letter-spacing: 0.1em;
+  padding: 15px 50px;
+}
+.modal-body input[type="checkbox"]{
+  width: 22px;
+  height: 22px;
+  margin: 0 22px 0 0;
+}
+.modal-body span{
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+color: #2D2D2D;
+}
+.agreement{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 30px 0;
+}
+.agreement a{
+  color: #2D2D2D;
+  text-decoration: underline;
+}
+input{
+  outline: none;
+}
+body.notScrollable {
+  overflow: hidden;
+}
+
+button.invalid{
+  opacity: 0.3;
+  pointer-events: none;
+}
+.error .tooltip{
+  top: -100px;
+  left: 10px;
+  display: block;
+  
+}
+.error .tooltip p{
+  color: #de3675;
+}
+.out .log-out{
+  width: 150px;
+  background: #ffffff;
+  box-shadow: 0px 2px 30px rgb(0 0 0 / 26%);
+  border-radius: 10px;
+  padding: 25px 8px;
+  position: absolute;
+  top: 73px;
+  left: -165px;
+  display: flex;
+  justify-content: center;
+}
+.log-out::before{
+  content: "";
+  width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 15px 15px 15px;
+border-color: transparent transparent #ffffff transparent;
+position: absolute;
+position: absolute;
+right: 15px;
+top: -15px;
+}
+.log-out .btn{
+  background: #2a8086;
+}
+
+.auth {
+  display: block;
 }

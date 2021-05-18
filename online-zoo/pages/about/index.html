@@ -28,12 +28,13 @@
         <div class="search-wrapper">
           <input type="text" class="search-input" placeholder="Search"> </div>
         <div class="search-button"></div>
-        <button class="login">log in</button>
-        <button class="signup">sign up</button>
-        <div class="user-button">
+        <button class="login" id="login">log in</button>
+        <button class="signup" id="signup">sign up</button>
+        <div class="user-button" id="user-button">
           <img src="../../assets/icons/user.svg" alt="" class="user-logo">
         </div>
       </div>
+
       <label for="toggle">&#9776;</label>
       <input type="checkbox" id="toggle">
     </div>
@@ -317,6 +318,69 @@
       </div>
     </div>
   </footer>
+  <div class="form-feedback hidden" id="form-feedback">
+    <div class="modal-header fc">
+        <img src="../../assets/images/header/logo-large.svg" alt="Online Zoo Logo">
+    </div>
+    <div class="modal-body">
+        <div class="tab">
+            <button class="tablinks active" id="signUpTab" onclick="openTab(event, 'createAccount')">Create
+                account</button>
+            <button class="tablinks" id="logInTab" onclick="openTab(event, 'logIn')">Log in</button>
+        </div>
+        <div class="tabcontent" id="createAccount">
+            <div class="btns fspac">
+                <button class="authorize" data-user="Google"><img src="../../assets/icons/gg-logo.svg"
+                        class="i-google" alt="">
+                    Google Sign in</button>
+                <button class="authorize" data-user="Facebook"><img src="../../assets/icons/fb-logo.svg"
+                        alt="">Facebook Sign in</button>
+            </div>
+            <div>
+                <label class="auth" for="name">Name: </label>
+                <input type="text" id="name" required="">
+
+                <label class="auth" for="email">Email: </label>
+                <input type="email" id="email" required="">
+
+                <label class="auth" for="password">Password: </label>
+                <input type="password" id="password" required="" minlength="8">
+                <div class="agreement">
+                    <input type="checkbox" id="agreement" required="">
+                    <span>Agree with the User <a href="#">Agreement</a> and <a href="#">Privacy Policy</a> </span>
+                </div>
+
+                <!-- <button class="button invalid" id="send" type="submit">SEND</button> -->
+                <button class="btn btn-pay btn-submit invalid" id="send">send </button>
+            </div>
+        </div>
+        <div class="tabcontent" id="logIn">
+            <div class="btns fspac">
+                <button class="authorize" data-user="Google"><img src="../../assets/icons/gg-logo.svg"
+                        class="i-google" alt="">
+                    Google
+                    Login</button>
+                <button class="authorize" data-user="Facebook"><img src="../../assets/icons/fb-logo.svg"
+                        alt="">Facebook Login</button>
+            </div>
+            <div>
+                <div class="error pr">
+                    <div class="tooltip hidden" id="user-error">
+                        <p>Incorrect email or password</p>
+                    </div>
+                </div>
+                <label class="auth" for="email">Email: </label>
+                <input type="text" id="email-user" required="">
+
+                <label class="auth" for="password">Password: </label>
+                <input type="password" id="password-user" required="">
+
+                <button class="btn btn-pay btn-submit invalid" id="send-user">send </button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="cover hidden" id="cover"></div>
   <script src="../../assets/js/index.js"></script>
 </body>
 

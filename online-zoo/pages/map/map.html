@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;500&family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-   <header class="header">
+   <header class="header" id="header">
     <div class="container">
       <div class="left">
         <a href="../about/index.html" class="logo-container"> <img src="../../assets/images/header/logo-large.svg" class="logo-img" alt=""> </a>
@@ -41,74 +41,77 @@
   <section class="content">
     <div class="container">
       <h1 class="title">choose your favorite animal</h1>
-      <div class="wrapper">
-        <div class="map">
-          <div class="img-wrapper eagle">
-            <div class="frame"></div>
-            <a href="../zoos/eagle.html">
-              <div class="animal eagle"></div>
-            </a>
-            <div class="tooltip">
-              <p>
-                Eagles
-              </p>
-              <p>
-                Catalina Island
-              </p>
+      <div class="wrapper-container" id="wrapper-container">
+        <div class="wrapper" id="wrapper">
+          <div class="map" id="map">
+            <div class="img-wrapper eagle">
+              <div class="frame"></div>
+              <a href="../zoos/eagle.html">
+                <div class="animal eagle"></div>
+              </a>
+              <div class="tooltip">
+                <p>
+                  Eagles
+                </p>
+                <p>
+                  Catalina Island
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="img-wrapper alligator">
-            <div class="frame"></div>
-            <a href="../zoos/alligator.html">
-            <div class="animal alligator"></div>
-            </a>
-            <div class="tooltip">
-              <p>
-                Alligators
-              </p>
-              <p>
-                St. Augustine's Alligator Farm Zoological Park
-              </p>
+            <div class="img-wrapper alligator">
+              <div class="frame"></div>
+              <a href="../zoos/alligator.html">
+              <div class="animal alligator"></div>
+              </a>
+              <div class="tooltip">
+                <p>
+                  Alligators
+                </p>
+                <p>
+                  St. Augustine's Alligator Farm Zoological Park
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="img-wrapper gorilla">
-            <div class="frame"></div>
-          <a href="../zoos/gorilla.html">
-           <div class="animal gorilla"></div>
-          </a>
-            <div class="tooltip">
-              <p>
-                Gorillas
-              </p>
-              <p>
-                GRACE gorillas
-              </p>
-            </div>
-          </div>
-          <div class="img-wrapper panda">
-            <div class="frame"></div>
-            <a href="../zoos/panda.html">
-               <div class="animal panda"></div>
+            <div class="img-wrapper gorilla">
+              <div class="frame"></div>
+            <a href="../zoos/gorilla.html">
+            <div class="animal gorilla"></div>
             </a>
-            <div class="tooltip">
-              <p>
-                Pandas
-              </p>
-              <p>
-                Shenshuping Gengda Panda Center
-              </p>
+              <div class="tooltip">
+                <p>
+                  Gorillas
+                </p>
+                <p>
+                  GRACE gorillas
+                </p>
+              </div>
+            </div>
+            <div class="img-wrapper panda">
+              <div class="frame"></div>
+              <a href="../zoos/panda.html">
+                <div class="animal panda"></div>
+              </a>
+              <div class="tooltip">
+                <p>
+                  Pandas
+                </p>
+                <p>
+                  Shenshuping Gengda Panda Center
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      
       <div class="buttons">
-        <button class="scale"></button>
-        <button class="scale min"></button>
+        <button class="zoom-in" id="zoom-in"></button>
+        <button class="scale-out" id="zoom-out"></button>
       </div>
     </div>
   </section>
   </main>
-  <footer>
+  <footer id="footer">
     <div class="container">
      <div class="left">
        <a href="../about/index.html" class="logo-container"> <img src="../../assets/images/header/logo-large.svg" class="logo-img" alt=""> </a>
@@ -127,5 +130,6 @@
     </div>
   </footer>
   <script src="../../assets/js/index.js"></script>
+  <script src="../../assets/js/map.js"></script>
 </body>
 </html>

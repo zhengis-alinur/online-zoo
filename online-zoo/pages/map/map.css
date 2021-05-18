@@ -191,6 +191,8 @@ header .signup:focus {
 }
 footer {
   background-color: #196469;
+  bottom: 0;
+  left: 0;
 }
 footer .main-nav {
   margin-left: 78px;
@@ -311,7 +313,15 @@ footer .design-info {
 .content {
   background-color: #2A8086;
 }
+
+.content .wrapper-container {
+  min-height: 1000px;
+  width: auto;
+}
+
 .content .wrapper {
+  min-height: 1000px;
+  overflow: hidden;
   width: 100%;
 }
 .content .title {
